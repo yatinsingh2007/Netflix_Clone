@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Martel Sans';
+}
+.main{
+    background-image: url(./Images/IN-en-20241223-TRIFECTA-perspective_1502c512-be5f-4f14-b21a-e3d75fe159ab_large.jpg);
+    height: 80vh;
+    position: relative;
+    background-position: center center;
+}
+.main .box{
+    height: 80vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.67;
+    position: absolute;
+    top: 0;
+}
+nav{
+    max-width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 30px;
+}
+nav img{
+    position: relative;
+    z-index: 10;
+}
+nav button,select{
+    position: relative;
+    z-index: 10;
+}
+.buttons{
+    display: flex;
+    gap: 30px
+}
+.hero{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px
+}
+.hero span:first-child{
+    font-size: 3rem;
+    font-weight: 900
+}
+.hero span:nth-child(2){
+    font-size: 1.5rem;
+    font-weight: 400
+}
+.inputs{
+    display: flex;
+    gap: 20px;
+}
+.rd{
+    background-color: red;
+    color: white;
+    padding: 3px 8px;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+}
