@@ -1,39 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix Clone</title>
     <link href="./Netflix.css" rel="stylesheet">
 </head>
+
 <body>
     <div class="main">
+        <div class="overlay"></div>
         <nav>
             <div class="logo">
-                <img src="./Images/logo.svg" alt="logo" width="100">
+                <img src="./Images/logo.svg" alt="Netflix Logo">
             </div>
-            <div class="buttons">
-                <select style="cursor: pointer;">
-                    <option>English</option>
-                    <option>Hindi</option>
+            <div class="nav-buttons">
+                <select id="language-select">
+                    <option value="en">English</option>
+                    <option value="hi">Hindi</option>
                 </select>
-                <button class="rd" style="cursor: pointer">Sign In</button>
+                <button class="btn-primary">Sign In</button>
             </div>
         </nav>
-        <div class="box"></div>
+
         <div class="hero">
-            <span>Unlimited movies, TV shows and more</span>
-            <span>Starts at ₹149. Cancel at any time.</span>
-            <span>Ready to watch? Enter your email to create or restart your membership.</span>
-            <div class="inputs">
-                <div>
-                    <input type="email" placeholder="Email Adress" style="font-size: 1.5rem; cursor: pointer">
-                </div>
-                <div>
-                    <button class="rd" style="font-size: 1.5rem; cursor: pointer;">Get Started ></button>
-                </div>
+            <h1>Unlimited movies, TV shows and more</h1>
+            <p>Starts at ₹149. Cancel at any time.</p>
+            <p class="email-note">Ready to watch? Enter your email to create or restart your membership.</p>
+            <div class="cta-form">
+                <input type="email" placeholder="Email address">
+                <button class="btn-large">
+                    Get Started
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 5L16 12L9 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
             </div>
         </div>
     </div>
+
+    <div class="separation-bar"></div>
+
+    <section class="feature-tv">
+        <div class="section-container">
+            <div class="section-text">
+                <h2>Enjoy on your TV</h2>
+                <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+            </div>
+            <div class="section-img">
+                <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
+                    alt="TV Feature">
+            </div>
+        </div>
+    </section>
+
+    <div class="separation-bar"></div>
+
+    <section class="feature-mobile">
+        <div class="section-container" style="flex-direction: row-reverse;">
+            <div class="section-text">
+                <h2>Download your shows to watch offline</h2>
+                <p>Save your favourites easily and always have something to watch.</p>
+            </div>
+            <div class="section-img">
+                <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
+                    alt="Mobile Feature">
+            </div>
+        </div>
+    </section>
+
+    <div class="separation-bar"></div>
+
+    <section class="feature-everywhere">
+        <div class="section-container">
+            <div class="section-text">
+                <h2>Watch everywhere</h2>
+                <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+            </div>
+            <div class="section-img">
+                <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png"
+                    alt="Devices Feature">
+            </div>
+        </div>
+    </section>
+
+    <div class="separation-bar"></div>
+
+    <section class="feature-kids">
+        <div class="section-container" style="flex-direction: row-reverse;">
+            <div class="section-text">
+                <h2>Create profiles for kids</h2>
+                <p>Send kids on adventures with their favourite characters in a space made just for them—free with your
+                    membership.</p>
+            </div>
+            <div class="section-img">
+                <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/kidsValueProp.png"
+                    alt="Kids Feature">
+            </div>
+        </div>
+    </section>
+
+    <div class="separation-bar"></div>
+
 </body>
+
 </html>
